@@ -1,6 +1,8 @@
 from VisitorMC3 import *
 import ast
 
+# Constants that require instructor's expertise
+
 C4_MAX_ALLOWED_RANGEITER = 50       # Maximum allowed constant within range() declarations
 E2_MAX_ALLOWED_LISTS = 10           # Maximum allowed declared lists
 G4_MIN_VAR_CHRS = 4                 # Minimum required characters in variable names
@@ -43,7 +45,7 @@ except Exception as e:
     print(e)
 
 # Printing the detected MC³
-else:
+finally:
     res = [('A4', resA4[0]), ('B6', resB6), ('B8', resB8), ('B9', resB9), ('B12', resB12), 
            ('C1', resC1), ('C2', resC2), ('C4', resC4), ('C8', resC8), ('D4', resD4), 
            ('E2', resE2), ('G4', resG4), ('G5', resG5), ('H1', resH1)]

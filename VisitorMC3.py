@@ -140,7 +140,7 @@ class VisitorMC3(ast.NodeVisitor):
         """Designed as a counter for B9 - elif/else retesting already checked 
            conditions.
            
-           Checks the whole tree for an If/Elif statement that has a single Compare 
+           Checks the whole tree for an If/Elif statement that has a SINGLE Compare 
            node (e.g. if a > 0) that is followed by Elif stataments in which the
            opposite comparison is made (e.g. elif a <= 0). While searching for
            the opposite comparisons, this methods checks BinOps until a Compare node
