@@ -1,5 +1,4 @@
 from VisitorMC3 import *
-import ast
 
 # Constants that require instructor's expertise
 
