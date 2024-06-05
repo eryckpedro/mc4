@@ -3,13 +3,13 @@ from VisitorMC3 import *
 # Constants that require instructor's expertise
 
 C4_MAX_ALLOWED_RANGEITER = 50       # Maximum allowed constant within range() declarations
-E2_MAX_ALLOWED_LISTS = 10           # Maximum allowed declared lists
+E2_MAX_ALLOWED_LISTS = 5            # Maximum allowed declared lists
 G4_MIN_VAR_CHRS = 4                 # Minimum required characters in variable names
 G4_MIN_FNC_CHRS = 8                 # Minimum required characters in function names
 G4_MAX_ALLOWED_NONSIGNIFICANT = 70  # Maximum allowed non-significant names
 
 # Reading and parsing the code to be analyzed
-with open('testCode.py', 'r') as file:
+with open('testCodeC.py', 'r') as file:
     code = file.read()
 
 parsed = ast.parse(code)

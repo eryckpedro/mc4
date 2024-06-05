@@ -768,7 +768,10 @@ class VisitorMC3(ast.NodeVisitor):
         numLists = 0
         for node in ast.walk(root):
             if isinstance(node, ast.Assign):
-               if isinstance(node.value, ast.List):
+                if isinstance(node.value, ast.List):
+                    numLists += 1
+                    
+                if isinstance(node.value, ast.ListComp):
                     numLists += 1
         
         if numLists > 0 and numLists >= numListTheshold:
