@@ -56,6 +56,8 @@ You can use the file `exampleUsage.py` as a template. It demonstrates how a Pyth
 
 Each MC³ is detected via a method called `visitor.getXX()`, in which `XX` is the MC³'s name. Each detection method requires the parsed object of the Python code. Some MC³ may also require constants defined by the instructor or teaching assistant. These constants are presented in the `exampleUsage.py` file.
 
+The files ```testCodeA.py```, ```testCodeB.py```, and ```testCodeC.py``` were elaborated to present code snippets that MC4 can detect.
+
 Each detection method returns `True` if the checked code contains the MC³, or `False` otherwise. Multiple detections of the **same** MC³ in the **same** code are ignored.
 
 ## Limitations
